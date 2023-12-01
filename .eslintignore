@@ -1,0 +1,6 @@
+tailwind.config.js
+sidebars.js
+plugins/
+babel.config.js
+docusaurus.config.js
+package-lock.json

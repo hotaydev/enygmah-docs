@@ -1,0 +1,12 @@
+export { default as DocumentsIcon } from "./documents";
+export { default as IntegrationsIcon } from "./integrations";
+export { default as TutorialIcon } from "./tutorial";
+export { default as ExamplesIcon } from "./examples";
+export { default as AwesomeIcon } from "./awesome";
+export { default as ExpertIcon } from "./expert";
+export { default as ContributeIcon } from "./contribute";
+export { default as UseCasesIcon } from "./use-cases";
+export { default as EnygmahWeekIcon } from "./enygmah-week";
+export { default as AboutUsIcon } from "./about-us";
+export { default as EnygmahStoreIcon } from "./enygmah-store";
+export { default as EnygmahIcon } from "./enygmah";

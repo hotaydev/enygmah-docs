@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "./plugins",
+    "./static",
+    "./build",
+    "./docusaurus"
+  ],
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}
