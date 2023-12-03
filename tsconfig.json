@@ -8,6 +8,8 @@
     "./docusaurus"
   ],
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext"
   }
 }
