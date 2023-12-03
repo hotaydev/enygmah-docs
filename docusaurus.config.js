@@ -4,7 +4,7 @@ const redirectJson = require("./redirects.json");
 const siteConfig = {
   title: "enygmah",
   tagline: "The only one tool that you neet to keep your project safe.",
-  url: "https://hotay.com",
+  url: "https://enygmah.com",
   baseUrl: "/",
   projectName: "enygmah",
   organizationName: "hotaydev",
@@ -47,7 +47,7 @@ const siteConfig = {
           ],
         },
         gtag: {
-          trackingID: "G-27Z1WY952H",
+          trackingID: "G-27Z1WY952H", // TODO: add the enygmah's gtag
         },
       },
     ],
@@ -115,7 +115,7 @@ const siteConfig = {
     },
     image: "img/social.png",
     algolia: {
-      // Use https://docsearch.algolia.com/ when it's ready for production
+      // TODO: Use https://docsearch.algolia.com/ when it's ready for production
       appId: "KRR9VEUPCT",
       apiKey: "cd0188125dcd31fb4b011b5e536d963a",
       indexName: "refine",
@@ -124,8 +124,7 @@ const siteConfig = {
     metadata: [
       {
         name: "keywords",
-        content:
-                    "security, cli, tool, dev tool, quality, code quality, code security, code analysis, static analysis, dynamic analysis",
+        content: "security, cli, tool, dev tool, quality, code quality, code security, code analysis, static analysis, dynamic analysis",
       },
     ],
     docs: {
