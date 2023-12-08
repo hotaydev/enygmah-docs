@@ -1,8 +1,8 @@
-// import { FooterDiscordIcon } from "./icons/footer-discord";
+import { FooterDiscordIcon } from "./icons/footer-discord";
 import { FooterGithubIcon } from "./icons/footer-github";
 import { FooterLinkedinIcon } from "./icons/footer-linkedin";
 // import { FooterRedditIcon } from "./icons/footer-reddit";
-import { FooterTwitterIcon } from "./icons/footer-twitter";
+// import { FooterTwitterIcon } from "./icons/footer-twitter";
 
 export const menuItems = [
   {
@@ -39,8 +39,8 @@ export const menuItems = [
     label: "Company",
     items: [
       {
-        label: "About",
-        href: "/docs",
+        label: "Pricing",
+        href: "/pricing",
       },
       {
         label: "Store",
@@ -61,7 +61,7 @@ export const secondaryMenuItems = [
   },
   {
     label: "License",
-    href: "https://github.com/hotaydev/hotay/blob/main/LICENSE",
+    href: "https://github.com/hotaydev/enygmah/blob/main/LICENSE",
   },
 ];
 
@@ -70,18 +70,18 @@ export const socialLinks = [
     icon: FooterGithubIcon,
     href: "https://github.com/hotaydev/enygmah",
   },
-  // {
-  //   icon: FooterDiscordIcon,
-  //   href: "https://discord.gg/hotaydev",
-  // },
+  {
+    icon: FooterDiscordIcon,
+    href: "https://discord.gg/hotaydev",
+  },
   // {
   //   icon: FooterRedditIcon,
   //   href: "https://www.reddit.com/r/hotaydev/",
   // },
-  {
-    icon: FooterTwitterIcon,
-    href: "https://twitter.com/hotaydev",
-  },
+  // {
+  //   icon: FooterTwitterIcon,
+  //   href: "https://twitter.com/hotaydev",
+  // },
   {
     icon: FooterLinkedinIcon,
     href: "https://www.linkedin.com/company/hotaydev",

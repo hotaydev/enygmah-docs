@@ -97,8 +97,8 @@ export const LandingTrustedByDevelopers: FC<Props> = ({ className }) => {
                 "dark:text-gray-400 text-gray-600",
               )}
             >
-                            Out-of-the box integrations for 15+ services
-                            including custom REST and GraphQL API’s.
+                            Out-of-the box integrations for 15+ pipeline services,
+                            including local and offline analysis.
             </p>
             <LandingSectionCtaButton to="/docs">
               See all integrations

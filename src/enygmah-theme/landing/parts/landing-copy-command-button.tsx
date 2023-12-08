@@ -7,7 +7,7 @@ import {
 } from "../../changing-text-element";
 import { LandingCopySuccessIcon } from "../../icons/landing-copy-success";
 
-const installText = "npm create enygmah-app@latest";
+const installText = "npm i -g enygmah@latest";
 const copiedText = "copied to clipboard!";
 
 export const LandingCopyCommandButton = ({

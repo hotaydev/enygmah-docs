@@ -57,7 +57,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
                 "text-gray-900 dark:text-gray-0",
               )}
             >
-                            Open-source Retool for Enterprise
+              Security and Quality for your code.
             </h1>
             <p
               className={clsx(
@@ -67,8 +67,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
                 "landing-xs:max-w-[384px]",
               )}
             >
-                            Build React-based internal tools, admin panels,
-                            dashboards & B2B apps with unmatched flexibility.
+              The only tool your project needs to guarantee security and quality. Open-source and free.
             </p>
           </div>
           <div
@@ -106,7 +105,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
               <span
                 className={clsx("text-base", "font-semibold")}
               >
-                                Get started
+                Get started
               </span>
             </Link>
             <LandingCopyCommandButton
