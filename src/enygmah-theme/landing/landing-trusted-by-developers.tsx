@@ -1,200 +1,268 @@
 import clsx from "clsx";
-import React, { FC, useEffect, useLayoutEffect, useRef } from "react";
-import {
-  OracleIcon,
-  SalesforceIcon,
-  CiscoIcon,
-  DeloitteIcon,
-  IbmIcon,
-  MetaIcon,
-  AtlassianIcon,
-  JpMorganIcon,
-  AutodeskIcon,
-  IntelIcon,
-  UpworkIcon,
-  AmazonIcon,
-} from "../../components/landing/icons";
 import { useInView } from "framer-motion";
+import React, {
+  DetailedHTMLProps,
+  FC,
+  ReactNode,
+  SVGProps,
+  useRef,
+} from "react";
+import {
+  Ably,
+  Airtable,
+  Antd,
+  Appwrite,
+  Chakra,
+  Directus,
+  Elide,
+  ElideGraphql,
+  Firebase,
+  Hasura,
+  Headless,
+  HookForm,
+  Mantine,
+  Mui,
+  ShadCnUI,
+  TailwindCss,
+} from "../../assets/integration-icons";
+import { LandingSectionCtaButton } from "./parts/landing-section-cta-button";
 
 type Props = {
     className?: string;
 };
 
 export const LandingTrustedByDevelopers: FC<Props> = ({ className }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref);
-
-  const lastChangedIndex = React.useRef<number>(0);
-
-  const [randomIcons, setRandomIcons] = React.useState<IList>([]);
-
-  useLayoutEffect(() => {
-    setRandomIcons(list.sort(() => 0.5 - Math.random()).slice(0, 6));
-  }, []);
-
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-    // change one random icon in the list every X seconds.
-    if (inView) {
-      interval = setInterval(() => {
-        setRandomIcons((prev) => {
-          const { changedIndex, newList } = changeOneRandomIcon(
-            prev,
-            list,
-            lastChangedIndex.current,
-          );
-          lastChangedIndex.current = changedIndex;
-          return newList;
-        });
-      }, 2000);
-    }
-
-    return () => clearInterval(interval);
-  }, [randomIcons, inView]);
-
   return (
-    <div className={clsx(className, "w-full")} ref={ref}>
+    <div className={clsx(className, "w-full")}>
       <div
         className={clsx(
-          "not-prose",
-          "relative",
           "w-full",
-          "p-4 landing-md:p-10",
-          "dark:bg-landing-trusted-by-developers-dark bg-landing-trusted-by-developers",
+          "relative",
+          "pb-4 landing-md:pb-10",
           "dark:bg-gray-800 bg-gray-50",
           "rounded-2xl landing-sm:rounded-3xl",
+          "overflow-hidden",
         )}
       >
-        <p
-          className={clsx(
-            "whitespace-nowrap",
-            "px-0 landing-sm:px-6 landing-lg:px-0",
-            "text-base landing-sm:text-2xl",
-            "dark:text-gray-400 text-gray-600",
-          )}
-        >
-          Trusted by developers from
-        </p>
         <div
           className={clsx(
-            "grid",
-            "grid-cols-3 landing-lg:grid-cols-6",
-            "min-h-[160px] landing-lg:min-h-[80px]",
-            "justify-center",
-            "items-center",
-            "mt-6",
+            "landing-packages-mask",
+            "pt-4 landing-md:pt-10",
           )}
         >
-          {randomIcons.map((item) => (
-            <div
-              key={item.id}
+          <PackagesContainer animDirection="right">
+            {[...listOne, ...listOne].map(
+              ({ icon: Icon, label }, index) => (
+                <PackageItem
+                  key={index}
+                  label={label}
+                  icon={<Icon width="24" height="24" />}
+                />
+              ),
+            )}
+          </PackagesContainer>
+        </div>
+
+        <div
+          className={clsx(
+            "not-prose",
+            "mt-4 landing-sm:mt-6 landing-lg:mt-10",
+            "px-4 landing-sm:px-10",
+          )}
+        >
+          <h6
+            className={clsx(
+              "p-0",
+              "font-semibold",
+              "text-base landing-sm:text-2xl",
+              "dark:text-gray-300 text-gray-900",
+            )}
+          >
+            Integrate with everything
+          </h6>
+          <div
+            className={clsx(
+              "not-prose",
+              "flex",
+              "items-center",
+              "justify-between",
+              "flex-wrap",
+              "gap-4 landing-sm:gap-8",
+            )}
+          >
+            <p
               className={clsx(
-                "max-w-[187px] w-full",
-                "overflow-hidden",
+                "p-0",
+                "text-base",
+                "dark:text-gray-400 text-gray-600",
               )}
             >
-              <div
-                className={clsx(
-                  "animate-opacity-reveal",
-                  "flex",
-                  "items-center",
-                  "justify-center",
-                  "max-w-[187px]",
-                )}
-              >
-                {item.icon}
-              </div>
-            </div>
-          ))}
+                            Out-of-the box integrations for 15+ services
+                            including custom REST and GraphQL API’s.
+            </p>
+            <LandingSectionCtaButton to="/docs">
+              See all integrations
+            </LandingSectionCtaButton>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-// change only one random icon in the list
-const changeOneRandomIcon = (
-  currentList: IList,
-  list: IList,
-  lastChangedIndex: number,
-): { newList: IList; changedIndex: number } => {
-  const newList = [...currentList];
+const PackagesContainer = ({
+  children,
+  className,
+  animDirection,
+  ...props
+}: DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
+    animDirection: "left" | "right";
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref);
 
-  // pick randomIndex from the current list
-  let randomIndex = Math.floor(Math.random() * newList.length);
-  // if the randomIndex is the same as the last changed index, pick another randomIndex
-  while (randomIndex === lastChangedIndex) {
-    randomIndex = Math.floor(Math.random() * newList.length);
-  }
-
-  // pick randomIcon from the list
-  let randomIcon = list[Math.floor(Math.random() * list.length)];
-  // check if the randomIcon is already in the current list
-  let isExist = newList.find((item) => item.id === randomIcon.id);
-  // if the randomIcon is already in the current list, pick another randomIcon
-  while (isExist) {
-    randomIcon = list[Math.floor(Math.random() * list.length)];
-    isExist = newList.find((item) => item.id === randomIcon.id);
-  }
-
-  // change the randomIcon in the current list
-  newList[randomIndex] = randomIcon;
-
-  return { newList, changedIndex: randomIndex };
+  return (
+    <div
+      ref={ref}
+      className={clsx(
+        "relative",
+        "flex",
+        "items-center",
+        animDirection === "left" ? "justify-start" : "justify-end",
+      )}
+    >
+      <div
+        className={clsx(
+          className,
+          inView
+            ? animDirection === "left"
+              ? "animate-landing-packages-left"
+              : "animate-landing-packages-right"
+            : "",
+          "absolute",
+          "left-0",
+          "top-0",
+          "pr-4",
+          "w-auto",
+          "flex",
+          "items-center",
+          "gap-[18px]",
+          "mt-6",
+          "relative",
+        )}
+        {...props}
+      >
+        {children}
+      </div>
+    </div>
+  );
 };
 
-type IList = {
-    icon: React.ReactNode;
-    id: number;
-}[];
+const PackageItem = (props: {
+    icon: ReactNode;
+    label: string;
+}) => {
+  const { icon, label } = props;
 
-const list: IList = [
+  return (
+    <div
+      className={clsx(
+        "group",
+        "relative",
+        "z-10",
+        "flex",
+        "items-center",
+        "justify-center",
+        "gap-3",
+        "pl-4 pt-4 pb-4 pr-6",
+        "dark:bg-gray-900 bg-gray-0",
+        "rounded-full",
+        "cursor-pointer",
+      )}
+    >
+      <div>{icon}</div>
+      <div
+        className={clsx(
+          "text-sm",
+          "font-medium",
+          "dark:bg-landing-packages-text-dark bg-landing-packages-text",
+          "bg-clip-text",
+          "text-transparent",
+          "whitespace-nowrap",
+        )}
+      >
+        {label}
+      </div>
+    </div>
+  );
+};
+
+const listOne = [
   {
-    icon: <OracleIcon />,
-    id: 1,
+    icon: (props: SVGProps<SVGSVGElement>) => <Firebase {...props} />,
+    label: "Firebase",
   },
   {
-    icon: <SalesforceIcon />,
-    id: 2,
+    icon: (props: SVGProps<SVGSVGElement>) => <Ably {...props} />,
+    label: "Ably",
   },
   {
-    icon: <CiscoIcon />,
-    id: 3,
+    icon: (props: SVGProps<SVGSVGElement>) => <Airtable {...props} />,
+    label: "Airtable",
   },
   {
-    icon: <IbmIcon />,
-    id: 4,
+    icon: (props: SVGProps<SVGSVGElement>) => <Appwrite {...props} />,
+    label: "Appwrite",
   },
   {
-    icon: <DeloitteIcon />,
-    id: 5,
+    icon: (props: SVGProps<SVGSVGElement>) => <Directus {...props} />,
+    label: "Directus",
   },
   {
-    icon: <JpMorganIcon />,
-    id: 7,
+    icon: (props: SVGProps<SVGSVGElement>) => <Elide {...props} />,
+    label: "Elide",
   },
   {
-    icon: <IntelIcon />,
-    id: 8,
+    icon: (props: SVGProps<SVGSVGElement>) => <ElideGraphql {...props} />,
+    label: "Elide GraphQL",
   },
   {
-    icon: <AtlassianIcon />,
-    id: 9,
+    icon: (props: SVGProps<SVGSVGElement>) => <Hasura {...props} />,
+    label: "Hasura",
   },
   {
-    icon: <UpworkIcon />,
-    id: 10,
+    icon: (props: SVGProps<SVGSVGElement>) => <HookForm {...props} />,
+    label: "Hook Form",
   },
   {
-    icon: <AutodeskIcon />,
-    id: 11,
+    icon: (props: SVGProps<SVGSVGElement>) => <Antd {...props} />,
+    label: "Ant Design",
   },
   {
-    icon: <MetaIcon />,
-    id: 12,
+    icon: (props: SVGProps<SVGSVGElement>) => <Mui {...props} />,
+    label: "Material UI",
   },
   {
-    icon: <AmazonIcon />,
-    id: 13,
+    icon: (props: SVGProps<SVGSVGElement>) => <Mantine {...props} />,
+    label: "Mantine",
+  },
+  {
+    icon: (props: SVGProps<SVGSVGElement>) => <Chakra {...props} />,
+    label: "Chakra UI",
+  },
+  {
+    icon: (props: SVGProps<SVGSVGElement>) => <ShadCnUI {...props} />,
+    label: "shadcn/ui",
+    tooltip: "npx shadcn-ui init",
+  },
+  {
+    icon: (props: SVGProps<SVGSVGElement>) => <TailwindCss {...props} />,
+    label: "Tailwind CSS",
+    tooltip: "npx tailwindcss init",
+  },
+  {
+    icon: (props: SVGProps<SVGSVGElement>) => <Headless {...props} />,
+    label: "Headless UI",
   },
 ];
+
