@@ -6,7 +6,7 @@ import { CommonLayout } from "../enygmah-theme/common-layout";
 import { MainFooter } from "../enygmah-theme/common-footer";
 import { LandingCommunity } from "../enygmah-theme/landing/landing-community";
 import { LandingEnterpriseDevelopers } from "../enygmah-theme/landing/landing-enterprise-developers";
-import { LandingTrustedByDevelopers } from "../enygmah-theme/landing/landing-trusted-by-developers";
+import { LandingIntegrations } from "../enygmah-theme/landing/landing-integrations";
 import { LandingPackages } from "../enygmah-theme/landing/landing-packages";
 import { LandingAlreadyInvented } from "../enygmah-theme/landing/landing-already-invented";
 import { LandingPureReactCode } from "../enygmah-theme/landing/landing-pure-react-code";
@@ -45,7 +45,7 @@ function Home() {
               )}
             >
               <LandingHeroSection />
-              <LandingTrustedByDevelopers
+              <LandingIntegrations
                 className={clsx(
                   "mt-12",
                   "landing-sm:mt-20",

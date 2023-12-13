@@ -8,30 +8,22 @@ import React, {
   useRef,
 } from "react";
 import {
-  Ably,
-  Airtable,
-  Antd,
-  Appwrite,
-  Chakra,
+  Bitbucket,
   Directus,
+  Docker,
   Elide,
   ElideGraphql,
-  Firebase,
   Hasura,
-  Headless,
-  HookForm,
-  Mantine,
-  Mui,
-  ShadCnUI,
-  TailwindCss,
+  Jenkins,
 } from "../../assets/integration-icons";
 import { LandingSectionCtaButton } from "./parts/landing-section-cta-button";
+import { GithubIcon } from "../icons/github";
 
 type Props = {
     className?: string;
 };
 
-export const LandingTrustedByDevelopers: FC<Props> = ({ className }) => {
+export const LandingIntegrations: FC<Props> = ({ className }) => {
   return (
     <div className={clsx(className, "w-full")}>
       <div
@@ -199,20 +191,20 @@ const PackageItem = (props: {
 
 const listOne = [
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Firebase {...props} />,
-    label: "Firebase",
+    icon: (props: SVGProps<SVGSVGElement>) => <GithubIcon {...props} />,
+    label: "Github Actions",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Ably {...props} />,
-    label: "Ably",
+    icon: (props: SVGProps<SVGSVGElement>) => <Bitbucket {...props} />,
+    label: "Bitbucket",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Airtable {...props} />,
-    label: "Airtable",
+    icon: (props: SVGProps<SVGSVGElement>) => <Jenkins {...props} />,
+    label: "Jenkins",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Appwrite {...props} />,
-    label: "Appwrite",
+    icon: (props: SVGProps<SVGSVGElement>) => <Docker {...props} />,
+    label: "Docker",
   },
   {
     icon: (props: SVGProps<SVGSVGElement>) => <Directus {...props} />,
@@ -229,40 +221,6 @@ const listOne = [
   {
     icon: (props: SVGProps<SVGSVGElement>) => <Hasura {...props} />,
     label: "Hasura",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <HookForm {...props} />,
-    label: "Hook Form",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <Antd {...props} />,
-    label: "Ant Design",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <Mui {...props} />,
-    label: "Material UI",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <Mantine {...props} />,
-    label: "Mantine",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <Chakra {...props} />,
-    label: "Chakra UI",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <ShadCnUI {...props} />,
-    label: "shadcn/ui",
-    tooltip: "npx shadcn-ui init",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <TailwindCss {...props} />,
-    label: "Tailwind CSS",
-    tooltip: "npx tailwindcss init",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <Headless {...props} />,
-    label: "Headless UI",
   },
 ];
 
