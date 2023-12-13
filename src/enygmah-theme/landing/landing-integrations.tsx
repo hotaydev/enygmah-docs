@@ -8,13 +8,15 @@ import React, {
   useRef,
 } from "react";
 import {
+  Aws,
   Bitbucket,
-  Directus,
+  Codecov,
   Docker,
-  Elide,
-  ElideGraphql,
-  Hasura,
+  Gitlab,
   Jenkins,
+  Snyk,
+  Sonar,
+  Terraform,
 } from "../../assets/integration-icons";
 import { LandingSectionCtaButton } from "./parts/landing-section-cta-button";
 import { GithubIcon } from "../icons/github";
@@ -89,7 +91,7 @@ export const LandingIntegrations: FC<Props> = ({ className }) => {
                 "dark:text-gray-400 text-gray-600",
               )}
             >
-                            Out-of-the box integrations for 15+ pipeline services,
+                            Out-of-the box integrations for 15+ pipelines and tools,
                             including local and offline analysis.
             </p>
             <LandingSectionCtaButton to="/docs">
@@ -207,20 +209,28 @@ const listOne = [
     label: "Docker",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Directus {...props} />,
-    label: "Directus",
+    icon: (props: SVGProps<SVGSVGElement>) => <Gitlab {...props} />,
+    label: "Gitlab",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Elide {...props} />,
-    label: "Elide",
+    icon: (props: SVGProps<SVGSVGElement>) => <Terraform {...props} />,
+    label: "Terraform",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <ElideGraphql {...props} />,
-    label: "Elide GraphQL",
+    icon: (props: SVGProps<SVGSVGElement>) => <Codecov {...props} />,
+    label: "Codecov",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Hasura {...props} />,
-    label: "Hasura",
+    icon: (props: SVGProps<SVGSVGElement>) => <Aws {...props} />,
+    label: "AWS",
+  },
+  {
+    icon: (props: SVGProps<SVGSVGElement>) => <Snyk {...props} />,
+    label: "Snyk",
+  },
+  {
+    icon: (props: SVGProps<SVGSVGElement>) => <Sonar {...props} />,
+    label: "Sonarqube",
   },
 ];
 
