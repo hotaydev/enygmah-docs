@@ -52,7 +52,7 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
             "dark:text-gray-0 text-gray-900",
           )}
         >
-                    Feel the power of a{" "}
+            Make part of our{" "}
           <span
             className={clsx(
               "font-semibold",
@@ -60,9 +60,9 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
               "text-enygmah-blue drop-shadow-[0_0_30px_rgba(0,128,255,0.3)]",
             )}
           >
-                        great community
+            growing community
           </span>
-                    .
+            .
         </h2>
       </div>
 
@@ -134,18 +134,19 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
             "rounded-2xl landing-sm:rounded-3xl",
             "dark:bg-landing-noise",
             "dark:bg-gray-800 bg-gray-50",
+            "text-center flex flex-col justify-around items-center"
           )}
         >
           {isBrowser && (
             <img
-              className={clsx("w-full", "object-cover")}
-              src={`/img/general-replaceable-images/investors${
-                colorMode === "dark" ? "-dark" : ""
-              }.png`}
+              className={clsx("w-[50%] lg:w-[70%]")}
+              src={`/img/logo/logo${
+                colorMode === "dark" ? "-light" : "-dark"
+              }.svg`}
               style={{
-                aspectRatio: "908/544",
+                aspectRatio: "176/59",
               }}
-              alt="investors"
+              alt="creator"
               loading="lazy"
             />
           )}
@@ -159,29 +160,18 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
               "dark:text-gray-400 text-gray-600",
             )}
           >
-                        Backed by{" "}
+            Created and Maintained by{" "}
             <a
-              href="https://www.ycombinator.com/"
+              href="https://www.hotay.dev/"
               target="_blank"
               rel="noopener noreferrer"
               className={clsx(
                 "dark:text-gray-0 text-gray-900 whitespace-nowrap no-underline",
               )}
             >
-                            Y Combinator
-            </a>{" "}
-                        and{" "}
-            <a
-              href="https://ee.500.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={clsx(
-                "dark:text-gray-0 text-gray-900 whitespace-nowrap no-underline ",
-              )}
-            >
-                            500 Emerging Europe
+              Hotay
             </a>
-                        .
+              , from Brazil.
           </div>
         </div>
       </div>

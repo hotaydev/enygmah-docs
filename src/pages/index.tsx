@@ -13,7 +13,7 @@ import { LandingPureReactCode } from "../enygmah-theme/landing/landing-pure-reac
 import { LandingSweetSpot } from "../enygmah-theme/landing/landing-sweet-spot";
 import { LandingHeroSection } from "../enygmah-theme/landing/landing-hero-section";
 import { CommonHeader } from "../enygmah-theme/common-header";
-import { LandingTestimonial } from "../enygmah-theme/landing/landing-testimonial";
+// import { LandingTestimonial } from "../enygmah-theme/landing/landing-testimonial";
 
 function Home() {
   const title = "enygmah | Code Security and Quality";
@@ -55,7 +55,7 @@ function Home() {
               />
             </div>
             <LandingSweetSpot />
-            <LandingTestimonial />
+            {/* <LandingTestimonial /> */}
             <div
               className={clsx(
                 "flex flex-col",
