@@ -90,12 +90,12 @@ export const LandingEnterpriseDevelopers: FC<Props> = ({ className }) => {
             "dark:text-gray-400 text-gray-600",
           )}
         >
-                    enygmah is designed to target the specific pain points of
-                    larger organizations by giving top priority to{" "}
+                    enygmah is designed to target the pain points of
+                    larger organizations by handling{" "}
           <span className="font-semibold text-gray-900 dark:text-gray-0">
-                        security
+                        security and quality
           </span>
-                    .
+                    , in an simple way.
         </p>
       </div>
 

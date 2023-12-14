@@ -72,7 +72,7 @@ export const socialLinks = [
   },
   {
     icon: FooterDiscordIcon,
-    href: "https://discord.gg/hotaydev",
+    href: "https://discord.gg/KvVc32G6",
   },
   // {
   //   icon: FooterRedditIcon,

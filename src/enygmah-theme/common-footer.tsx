@@ -25,7 +25,7 @@ export const MainFooter = () => {
           "text-gray-600 dark:text-gray-400",
         )}
       >
-        The only one tool you need to ensure security and quality on your project
+        The only tool your project needs to guarantee security and quality. Open-source and free.
       </div>
       <a
         href="mailto:hi@enygmah.com"

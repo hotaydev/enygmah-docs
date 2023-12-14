@@ -3,7 +3,7 @@ const redirectJson = require("./redirects.json");
 /** @type {import('@docusaurus/types/src/index').DocusaurusConfig} */
 const siteConfig = {
   title: "enygmah",
-  tagline: "The only one tool that you neet to keep your project safe.",
+  tagline: "The only tool your project needs to guarantee security and quality. Open-source and free.",
   url: "https://enygmah.com",
   baseUrl: "/",
   projectName: "enygmah",

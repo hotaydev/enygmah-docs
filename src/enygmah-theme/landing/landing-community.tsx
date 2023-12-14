@@ -23,17 +23,16 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
         href: "https://github.com/hotaydev/enygmah",
       },
       {
-        stat: "8K+",
-        description:
-                    "Projects on production, including large enterprises",
+        stat: "15+",
+        description: "Integrations in use by big tech companies",
       },
       {
-        stat: "32K+",
+        stat: "10+",
         description: "Active developers in our open-source community",
       },
       {
-        stat: "200K+",
-        description: "End users are using apps built with enygmah",
+        stat: "5K+",
+        description: "Issues resolved on the analyzed projects",
       },
     ];
   }, [githubStarCountText]);

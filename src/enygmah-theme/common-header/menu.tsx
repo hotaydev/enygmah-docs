@@ -7,11 +7,11 @@ import {
   GithubStarIcon,
   GithubIcon,
   DiscordIcon,
-  TwitterIcon,
 } from "../icons/popover";
 import { MenuItem } from "./menu-item";
 import { NavbarItem } from "./navbar-item";
 import { NavbarPopoverItem } from "./navbar-popover-item";
+import { Linkedin } from "@site/src/components/blog/icons";
 
 export const Menu: React.FC = () => {
   return (
@@ -105,11 +105,11 @@ export const Menu: React.FC = () => {
                       >
                         <GithubIcon className="dark:text-gray-400 text-gray-500" />
                       </Link>
-                      <Link to="https://discord.com/invite/enygmah">
+                      <Link to="https://discord.gg/KvVc32G6">
                         <DiscordIcon />
                       </Link>
-                      <Link to="https://twitter.com/hotaydev">
-                        <TwitterIcon />
+                      <Link to="https://www.linkedin.com/company/hotaydev">
+                        <Linkedin />
                       </Link>
                     </div>
                   </div>
