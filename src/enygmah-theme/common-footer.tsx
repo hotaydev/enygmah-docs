@@ -5,6 +5,7 @@ import { HeartOutlinedIcon } from "./icons/heart-outlined";
 import Link from "@docusaurus/Link";
 import { EnygmahLogoIcon } from "./icons/enygmah-logo";
 import { PHBadgeIcon } from "./icons/ph-badge";
+import { LeafIcon } from "./icons/leaf";
 
 export const MainFooter = () => {
   const info = (
@@ -93,6 +94,16 @@ export const MainFooter = () => {
               />
             </a>
           ))}
+        </div>
+      </div>
+      <div className={clsx("flex", "flex-col", "gap-4", "mt-5", "max-w-[200px]")}>
+        <div className={clsx("text-sm", "flex", "justify-center", "items-center", "bg-[#32A34A]", "text-white font-semibold", "rounded-2xl", "py-1 pl-1 pr-3", "cursor-pointer")}>
+          <div className={clsx("bg-white p-1 rounded-full", "mr-2")}>
+            <LeafIcon width={15} height={15} />
+          </div>
+          <div className={clsx("text-center w-full")}>
+            Carbon Neutral
+          </div>
         </div>
       </div>
     </div>
