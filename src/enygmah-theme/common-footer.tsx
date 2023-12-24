@@ -97,7 +97,7 @@ export const MainFooter = () => {
         </div>
       </div>
       <div className={clsx("flex", "flex-col", "gap-4", "mt-5", "max-w-[200px]")}>
-        <div className={clsx("text-sm", "flex", "justify-center", "items-center", "bg-[#32A34A]", "text-white font-semibold", "rounded-2xl", "py-1 pl-1 pr-3", "cursor-pointer")}>
+        <div className={clsx("text-xs", "flex", "justify-center", "items-center", "bg-[#32A34A]", "text-white font-semibold", "rounded-2xl", "py-1 pl-1 pr-3", "cursor-pointer")}>
           <div className={clsx("bg-white p-1 rounded-full", "mr-2")}>
             <LeafIcon width={15} height={15} />
           </div>

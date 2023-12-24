@@ -95,7 +95,7 @@ export const LandingEnterpriseDevelopers: FC<Props> = ({ className }) => {
           <span className="font-semibold text-gray-900 dark:text-gray-0">
                         security and quality
           </span>
-                    , in an simple way.
+                    , in a simple way.
         </p>
       </div>
 
