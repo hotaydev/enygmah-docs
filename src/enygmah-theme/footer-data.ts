@@ -39,8 +39,8 @@ export const menuItems = [
     label: "Company",
     items: [
       {
-        label: "Pricing",
-        href: "/pricing",
+        label: "Hotay Website",
+        href: "https://hotay.dev",
       },
       {
         label: "Store",

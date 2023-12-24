@@ -108,9 +108,13 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
                 Get started
               </span>
             </Link>
-            <LandingCopyCommandButton
-              className={clsx("hidden", "landing-sm:block")}
-            />
+            <div>
+              {/* TODO: after launched, remove this div and keep just the LandingCopyCommandButton element */}
+              <LandingCopyCommandButton
+                className={clsx("hidden", "landing-sm:block")}
+              />
+              <p className="text-xs ml-3 mt-1 text-gray-450">Not yet launched</p>
+            </div>
           </div>
         </div>
         <div

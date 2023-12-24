@@ -124,9 +124,4 @@ export const MENU_ITEMS: MenuItemType[] = [
       },
     ],
   },
-  {
-    isPopover: false,
-    label: "Pricing",
-    href: "/pricing",
-  },
 ];

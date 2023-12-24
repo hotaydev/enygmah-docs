@@ -59,7 +59,7 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
             "dark:text-gray-0 text-gray-900",
           )}
         >
-                    The{" "}
+          The{" "}
           <span
             className={clsx(
               "font-semibold",
@@ -67,9 +67,9 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
               "text-enygmah-indigo drop-shadow-[0_0_30px_rgba(51,51,255,0.3)]",
             )}
           >
-                        sweet spot
+          sweet spot
           </span>{" "}
-                    between low-code and full-code.
+          achieved with a quick security configuration
         </h2>
         <p
           className={clsx(

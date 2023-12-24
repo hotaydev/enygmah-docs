@@ -40,8 +40,6 @@ module.exports = {
           "landing-stats-fallback-bg": "#242442",
           "landing-footer-bg": "#0F0F3D",
           "landing-footer-border": "#2E2E78",
-          "pricing-table-alt-dark": "#181927",
-          "pricing-table-alt": "#F4F8FB",
         },
         gray: {
           0: "#FFFFFF",
@@ -287,12 +285,6 @@ module.exports = {
                     "linear-gradient(360deg, rgba(73, 69, 255, 0) 0%, rgba(73, 69, 255, 0.25) 50%, rgba(73, 69, 255, 0) 100%)",
         "enygmah-week-strapi-timeline-item-bg-lg":
                     "linear-gradient(256deg, rgba(73, 69, 255, 0.25) 0%, rgba(73, 69, 255, 0) 60%)",
-        "pricing-text-bg-red":
-                    "linear-gradient(90deg, #FF4C4D 30.89%, #FF9933 48.82%)",
-        "pricing-text-bg-green":
-                    "linear-gradient(90deg, #0FBDBD 40.72%, #26D97F 51.09%)",
-        "pricing-text-bg-enterprise":
-                    "linear-gradient(90deg, #FF9933 37.5%, #FF4C4D 73.48%)",
         "banner-examples-gray": [
           "url(/img/general-replaceable-images/landing-noise.webp)",
           "radial-gradient(70.09% 100% at 50% 0%, #474E6B 0%, #303450 100%)",
@@ -703,8 +695,6 @@ module.exports = {
       "landing-lg": "1296px",
       "landing-xl": "1440px",
       "landing-footer": "1264px",
-      "pricing-content-sm": "640px",
-      "pricing-content": "960px",
       "blog-sm": "688px",
       "blog-md": "1000px",
       "blog-lg": "1280px",
