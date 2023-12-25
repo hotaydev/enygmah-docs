@@ -3,7 +3,6 @@ import clsx from "clsx";
 import { LandingHeroGithubStars } from "./parts/landing-hero-github-stars";
 import { LandingStartActionIcon } from "../icons/landing-start-action";
 
-import { LandingHeroAnimation } from "./parts/landing-hero-animation";
 import { LandingCopyCommandButton } from "./parts/landing-copy-command-button";
 import Link from "@docusaurus/Link";
 
@@ -125,7 +124,8 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
             "right-0",
           )}
         >
-          <LandingHeroAnimation />
+          {/* Add content Here */}
+          <img src="/img/hero-image.png" alt="Logo" width={500} height={500} />
         </div>
       </div>
     </div>
