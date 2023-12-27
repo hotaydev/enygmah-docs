@@ -320,7 +320,7 @@ export const MainFooter = () => {
             )}
           >
             {
-              "© " + new Date().getFullYear() + ", enygmah from Brazil to wherever you're with "
+              "© " + new Date().getFullYear() + ", enygmah from Brazil to the world with "
             }
             <HeartOutlinedIcon
               className={clsx(

@@ -43,8 +43,8 @@ export const menuItems = [
         href: "https://hotay.dev",
       },
       {
-        label: "Store",
-        href: "#",
+        label: "Sponsor",
+        href: "https://github.com/sponsors/hotaydev",
       },
       {
         label: "Contact Us",
