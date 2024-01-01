@@ -79,9 +79,8 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
             "dark:text-gray-400 text-gray-600",
           )}
         >
-                    Drag-and-drop tools shine initially but collapse under the
-                    weight of complexity. enygmah offers comparable speed at the
-                    start and infinite scaling in the long run.
+          Implementing these processes requires a lot of time. But it doesn&apos;t have to be this way.
+          enygmah simplifies this implementation, making this process easier and faster.
         </p>
       </div>
 

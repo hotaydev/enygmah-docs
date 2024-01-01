@@ -7,9 +7,9 @@ import { MainFooter } from "../enygmah-theme/common-footer";
 import { LandingCommunity } from "../enygmah-theme/landing/landing-community";
 import { LandingEnterpriseDevelopers } from "../enygmah-theme/landing/landing-enterprise-developers";
 import { LandingIntegrations } from "../enygmah-theme/landing/landing-integrations";
-import { LandingPackages } from "../enygmah-theme/landing/landing-packages";
-import { LandingAlreadyInvented } from "../enygmah-theme/landing/landing-already-invented";
-import { LandingPureReactCode } from "../enygmah-theme/landing/landing-pure-react-code";
+// import { LandingPackages } from "../enygmah-theme/landing/landing-packages";
+// import { LandingAlreadyInvented } from "../enygmah-theme/landing/landing-already-invented";
+// import { LandingPureReactCode } from "../enygmah-theme/landing/landing-pure-react-code";
 import { LandingSweetSpot } from "../enygmah-theme/landing/landing-sweet-spot";
 import { LandingHeroSection } from "../enygmah-theme/landing/landing-hero-section";
 import { CommonHeader } from "../enygmah-theme/common-header";
@@ -56,7 +56,7 @@ function Home() {
             </div>
             <LandingSweetSpot />
             {/* <LandingTestimonial /> */}
-            <div
+            {/* <div
               className={clsx(
                 "flex flex-col",
                 "gap-12 landing-md:gap-6",
@@ -80,7 +80,7 @@ function Home() {
                   )}
                 />
               </div>
-            </div>
+            </div> */}
             <LandingCommunity />
             <LandingEnterpriseDevelopers />
           </div>
