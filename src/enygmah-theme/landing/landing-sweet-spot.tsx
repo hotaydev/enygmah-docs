@@ -149,7 +149,7 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                   "dark:text-gray-300 text-gray-700",
                 )}
               >
-                {activeListItem.title}
+                Business applications not only share fundemental UI elements, but also the underlying logic.
               </h3>
               <p
                 className={clsx(
@@ -158,7 +158,7 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                   "dark:text-gray-400 text-gray-600",
                 )}
               >
-                {activeListItem.description}
+                Stop writing repetitive code for CRUD, security and state management. Let enygmah automatically transform your UI elements to enterprise-grade:
               </p>
               <div
                 className={clsx(
@@ -320,10 +320,6 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
 
 const list = [
   {
-    title: "Business applications not only share fundemental UI elements, but also the underlying logic.",
-    description: `Stop writing repetitive code for CRUD, security and
-        state management. Let enygmah automatically transform
-        your UI elements to enterprise-grade:`,
     icon: (props: { active: boolean }) => (
       <DataTablesIcon
         className={clsx(
@@ -346,10 +342,6 @@ const list = [
             "dark:bg-landing-sweet-spot-glow-red-dark bg-landing-sweet-spot-glow-red-light",
   },
   {
-    title: "Business applications not only share fundemental UI elements, but also the underlying logic.",
-    description: `Stop writing repetitive code for CRUD, security and
-      state management. Let enygmah automatically transform
-      your UI elements to enterprise-grade:`,
     icon: (props: { active: boolean }) => (
       <ListIcon
         className={clsx(
@@ -372,10 +364,6 @@ const list = [
             "dark:bg-landing-sweet-spot-glow-orange-dark bg-landing-sweet-spot-glow-orange-light",
   },
   {
-    title: "Business applications not only share fundemental UI elements, but also the underlying logic.",
-    description: `Stop writing repetitive code for CRUD, security and
-state management. Let enygmah automatically transform
-your UI elements to enterprise-grade:`,
     icon: (props: { active: boolean }) => (
       <ChartsIcon
         className={clsx(
@@ -398,10 +386,6 @@ your UI elements to enterprise-grade:`,
             "dark:bg-landing-sweet-spot-glow-yellow-dark bg-landing-sweet-spot-glow-yellow-light",
   },
   {
-    title: "Business applications not only share fundemental UI elements, but also the underlying logic.",
-    description: `Stop writing repetitive code for CRUD, security and
-  state management. Let enygmah automatically transform
-  your UI elements to enterprise-grade:`,
     icon: (props: { active: boolean }) => (
       <FormsIcon
         className={clsx(
@@ -424,10 +408,6 @@ your UI elements to enterprise-grade:`,
             "dark:bg-landing-sweet-spot-glow-cyan-dark bg-landing-sweet-spot-glow-cyan-light",
   },
   {
-    title: "Business applications not only share fundemental UI elements, but also the underlying logic.",
-    description: `Stop writing repetitive code for CRUD, security and
-  state management. Let enygmah automatically transform
-  your UI elements to enterprise-grade:`,
     icon: (props: { active: boolean }) => (
       <WizardsIcon
         className={clsx(
@@ -450,10 +430,6 @@ your UI elements to enterprise-grade:`,
             "dark:bg-landing-sweet-spot-glow-blue-dark bg-landing-sweet-spot-glow-blue-light",
   },
   {
-    title: "Business applications not only share fundemental UI elements, but also the underlying logic.",
-    description: `Stop writing repetitive code for CRUD, security and
-  state management. Let enygmah automatically transform
-  your UI elements to enterprise-grade:`,
     icon: (props: { active: boolean }) => (
       <AuthenticationIcon
         className={clsx(

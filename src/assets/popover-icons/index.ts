@@ -7,6 +7,5 @@ export { default as ExpertIcon } from "./expert";
 export { default as ContributeIcon } from "./contribute";
 export { default as UseCasesIcon } from "./use-cases";
 export { default as EnygmahWeekIcon } from "./enygmah-week";
-export { default as AboutUsIcon } from "./about-us";
 export { default as EnygmahStoreIcon } from "./enygmah-store";
 export { default as EnygmahIcon } from "./enygmah";
