@@ -11,40 +11,40 @@ import {
 
 const list = [
   {
-    icon: <SelfHostedIcon />,
-    title: "Self-host for compliance",
+    icon: <AccessControlIcon />,
+    title: "Quick integration",
     description:
-            "Deploy to your own infrastructure without worrying about regulations, performance, and stability. Maintain your current security best practices with no compromises.",
+      "Integrating enygmah takes less than 5 minutes, with the help of our integrations documentation.",
   },
   {
     icon: <IdentityIcon />,
-    title: "Leverage the power of your existing Identity Provider",
+    title: "Code Quality and Security Assurance",
     description:
-            "Native support for Okta, Azure AD, Amazon Cognito & Google Cloud Identity.",
+      "Do not allow commits that do not follow the code standard or that introduce a vulnerability.",
   },
   {
-    icon: <AccessControlIcon />,
-    title: "Achieve fine-grained access control",
+    icon: <SelfHostedIcon />,
+    title: "Run anywhere",
     description:
-            "Out-of-the-box support for widely accepted authorization models including ACL, RBAC & ABAC.",
-  },
-  {
-    icon: <BlackBoxIcon />,
-    title: "Unlock the black box",
-    description:
-            "Implement an open-source solution with an open architecture. Save yourself from the hassle of adding another proprietary component to your stack.",
+      "Use on pre-commit, within a pipeline, on a virtual machine, or on a physical machine. It's your choice.",
   },
   {
     icon: <MonitorIcon />,
-    title: "Effortlessly monitor your application",
+    title: "Extensive docs",
     description:
-            "Ready-made providers and components for audit logging and usage analytics.",
+      "We have a comprehensive documentation covering a wide array of integration types. Simply pick the one that suits your needs.",
+  },
+  {
+    icon: <BlackBoxIcon />,
+    title: "Growing Support",
+    description:
+      "We are vibrant and ever-expanding community. Feel free to ask questions, and share your innovative ideas and suggestions!",
   },
   {
     icon: <SupportIcon />,
-    title: "Get supported by the experts",
+    title: "Decide the wait time",
     description:
-            "Enroll in plans that provide priority support, trainings and consulting.",
+      "You decide how long you'll wait. enygmah provides quick analyses lasting seconds or more in-depth ones taking several minutes.",
   },
 ];
 
