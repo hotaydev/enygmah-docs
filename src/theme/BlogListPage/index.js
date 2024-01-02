@@ -45,22 +45,28 @@ function BlogListPageContent(props) {
 
   return (
     <BlogLayout>
-      {isFirstPage && <FeaturedBlogPostItems items={featuredPosts} />}
-      <div
-        className={clsx(
-          "px-4",
-          "max-w-[512px]",
-          "blog-md:px-7",
-          "blog-md:max-w-screen-blog-md",
-          "blog-2xl:px-0",
-          "blog-2xl:max-w-screen-blog-md",
-          "w-full",
-          "mx-auto",
-          "blog-md:block hidden",
-        )}
-      >
-        <div className="border-b border-gray-100 dark:border-gray-700"></div>
-      </div>
+      {
+        (isFirstPage && featuredPosts.length > 0) ? 
+          <>
+            <FeaturedBlogPostItems items={featuredPosts} />
+            <div
+              className={clsx(
+                "px-4",
+                "max-w-[512px]",
+                "blog-md:px-7",
+                "blog-md:max-w-screen-blog-md",
+                "blog-2xl:px-0",
+                "blog-2xl:max-w-screen-blog-md",
+                "w-full",
+                "mx-auto",
+                "blog-md:block hidden",
+              )}
+            >
+              <div className="border-b border-gray-100 dark:border-gray-700"></div>
+            </div>
+          </>
+          : <></>
+      }
       <BlogPostItems
         items={paginatedPosts}
         tags={tags}

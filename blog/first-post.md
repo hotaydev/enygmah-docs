@@ -6,6 +6,7 @@ authors: taylor
 tags: [general]
 image: /img/blog/first-post.png
 hide_table_of_contents: false
+is_featured: false
 ---
 
 # First Post

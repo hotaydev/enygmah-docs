@@ -47,22 +47,8 @@ export default function BlogPostItems({
                 "font-semibold",
               )}
             >
-                            All Posts
+              All Posts
             </h2>
-            <p
-              className={clsx(
-                "text-sm blog-md:text-base blog-lg:text-xl",
-                "blog-md:max-w-[624px]",
-                "mt-6 lg:mt-0",
-                "text-gray-500 dark:text-gray-400",
-              )}
-            >
-              <b>enygmah technical blog</b> - a resource for
-                            enygmah, front-end ecosystem, and web development.
-                            Here, we publish insightful articles that demystify
-                            complex concepts, explore new trends, and provide
-                            helpful tips to enhance your coding journey.
-            </p>
           </div>
           <TagsList tags={tags} />
         </>
