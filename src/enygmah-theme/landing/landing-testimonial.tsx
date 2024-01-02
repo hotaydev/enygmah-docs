@@ -261,7 +261,7 @@ const testimonials = [
     link: "https://twitter.com/zenorocha",
     description:
             "I find CRUD boring, but enygmah makes it fun for developers again!",
-    img: "/img/general-replaceable-images/zeno-rocha.png",
+    img: "/img/general-replaceable-images/testimonials/zeno-rocha.png",
   },
   {
     title: "Author of React Hook Form",
@@ -269,7 +269,7 @@ const testimonials = [
     link: "https://twitter.com/HookForm",
     description:
             "enygmah perfectly aligns with the philosophy of React Hook Form, and they work seamlessly together.",
-    img: "/img/general-replaceable-images/beier-luo.png",
+    img: "/img/general-replaceable-images/testimonials/beier-luo.png",
   },
   {
     title: "Sr. Software Engineer at Atlassian",
@@ -277,7 +277,7 @@ const testimonials = [
     link: "https://twitter.com/danieldelcore",
     description:
             "enygmah has codemod support for major version transitions, making it easy for users to integrate new versions into their existing codebases seamlessly.",
-    img: "/img/general-replaceable-images/daniel-del-core.png",
+    img: "/img/general-replaceable-images/testimonials/daniel-del-core.png",
   },
   {
     title: "Founder - Tremor",
@@ -285,7 +285,7 @@ const testimonials = [
     link: "https://twitter.com/kindlaar",
     description:
             "enygmah has one of the most convenient developer experiences (DX), giving me superpowers when it comes to developing modern web apps with security and flexibility in mind.",
-    img: "/img/general-replaceable-images/christopher-kindl.png",
+    img: "/img/general-replaceable-images/testimonials/christopher-kindl.png",
   },
   {
     title: "CEO - Medusa",
@@ -293,7 +293,7 @@ const testimonials = [
     link: "https://medusajs.com/",
     description:
             "Medusa and enygmah is a match for all developers looking for a strong open-source foundation. Check out the enygmah SWAG store for a great Medusa implementation!",
-    img: "/img/general-replaceable-images/nicklas-gellner.png",
+    img: "/img/general-replaceable-images/testimonials/nicklas-gellner.png",
   },
   {
     title: "CEO - cerbos.dev",
@@ -301,14 +301,14 @@ const testimonials = [
     link: "https://cerbos.dev/about",
     description:
             "No enterprise or development team want to be confined by the limitation of a framework. enygmah is one of those rare frameworks that strikes the balance perfectly right. Low code, easy to use but when needed fully customizable with a perfect escape hatch.",
-    img: "/img/general-replaceable-images/emre-baran.png",
+    img: "/img/general-replaceable-images/testimonials/emre-baran.png",
   },
   {
     title: "Founder - Cohorence",
     name: "Zachary Zaro",
     link: "https://www.withcoherence.com",
     description: "npm create enygmah-app@latest => Boom!",
-    img: "/img/general-replaceable-images/zachary-zaro.png",
+    img: "/img/general-replaceable-images/testimonials/zachary-zaro.png",
   },
   {
     title: "Daisy UI - Founder",
@@ -316,7 +316,7 @@ const testimonials = [
     link: "https://daisyui.com",
     description:
             "I really like how enygmah gives the freedom to choose different stacks for back-end, front-end, and even UI libraries.",
-    img: "/img/general-replaceable-images/pouya-saadeghi.png",
+    img: "/img/general-replaceable-images/testimonials/pouya-saadeghi.png",
   },
   {
     title: "Founder - Next UI",
@@ -324,7 +324,7 @@ const testimonials = [
     link: "https://twitter.com/jrgarciadev",
     description:
             "In enygmah's headless way, the flexibility of the UI is impressive. The implementation of NextUI in enygmah demonstrates this.",
-    img: "/img/general-replaceable-images/junior-garcia.png",
+    img: "/img/general-replaceable-images/testimonials/junior-garcia.png",
   },
   {
     title: "Founder - JS Mastery",
@@ -332,6 +332,6 @@ const testimonials = [
     link: "https://twitter.com/jsmasterypro/status/1721977998436675703?s=20",
     description:
             "enygmah has truly transformed the app development process, making it incredibly efficient and hassle-free. With enygmah, you can focus on your app's core features, not on the time-consuming tools setup, allowing you to do things that matter the most.",
-    img: "/img/general-replaceable-images/adrian-hajdin.png",
+    img: "/img/general-replaceable-images/testimonials/adrian-hajdin.png",
   },
 ];

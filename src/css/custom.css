@@ -37,39 +37,12 @@
     .animation-faster-speed {
         animation-duration: 1s;
     }
-    .landing-mask-image-bg {
-        mask-image: url("../../static/assets/hero-bottom-bg.svg");
-        mask-size: 1920px 288px;
-        mask-position: center;
-    }
     .scrollbar-hidden {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
     .scrollbar-hidden::-webkit-scrollbar {
         display: none;
-    }
-
-    .landing-image-bottom-mobile-bg {
-        mask-image: url("../../static/assets/hero-video-bottom-mobile.svg");
-        mask-size: 620px 350px;
-        mask-position: top;
-    }
-
-    @screen landing-sm {
-        .landing-image-bottom-mobile-bg {
-            mask-image: url("../../static/assets/hero-video-bottom-mobile.svg");
-            mask-size: 720px 316px;
-            mask-position: top;
-        }
-    }
-
-    @screen landing-md {
-        .landing-image-bottom-mobile-bg {
-            mask-image: url("../../static/assets/hero-video-bottom-mobile.svg");
-            mask-size: 1080px 474px;
-            mask-position: top;
-        }
     }
 
     .landing-wide-mask {
@@ -632,12 +605,6 @@ html[data-page="index"] {
     #__docusaurus .custom-table-of-contents .table-of-contents {
         @apply hidden;
     }
-}
-
-#__docusaurus .github-banner-bg {
-    background-image: url("/img/blog-static/github-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #__docusaurus .twitter-banner-bg {

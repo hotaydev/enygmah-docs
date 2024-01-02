@@ -306,8 +306,6 @@ module.exports = {
                     "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.50) 100%)",
         "top-announcement-text":
                     "linear-gradient(90deg, rgba(31, 63, 72, 0.00) 0%, #1F3F48 10%, #1F3F48 90%, rgba(31, 63, 72, 0.00) 100%)",
-        "top-announcement-bg-tr":
-                    "url('/img/general-replaceable-images/top-announcement-tr.png')",
         "landing-hero-item-name-gradient":
                     "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%)",
         "landing-hero-item-background":

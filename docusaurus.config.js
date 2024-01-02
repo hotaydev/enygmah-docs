@@ -9,7 +9,7 @@ const siteConfig = {
   projectName: "enygmah",
   organizationName: "hotaydev",
   trailingSlash: true,
-  favicon: "img/favicon.svg",
+  favicon: "img/favicon.png",
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -113,7 +113,7 @@ const siteConfig = {
         },
       ],
     },
-    image: "img/social.png",
+    image: "img/hero-image.png",
     algolia: {
       // TODO: Use https://docsearch.algolia.com/ when it's ready for production
       appId: "KRR9VEUPCT",
