@@ -1,36 +1,14 @@
-import Link from "@docusaurus/Link";
 import { ArrowRightIcon } from "@site/src/enygmah-theme/icons/arrow-right";
 import { LandingRainbowButton } from "@site/src/enygmah-theme/landing-rainbow-button";
 import clsx from "clsx";
 import React from "react";
 
-declare global {
-  interface Window {
-    gtag: any;
-  }
-}
-
 const text = "Struggling with internal tools?";
 const description =
     "Explore enygmah's limitless possibilities in crafting CRUD apps, CRM solutions, HR dashboards, and more!";
-const image =
-    "/img/general-replaceable-images/app-crm.png";
 
 export const BannerSidebar = ({ shouldShowBanner }) => {
-  React.useEffect(() => {
-    if (
-      typeof window !== "undefined" &&
-            typeof window.gtag !== "undefined" &&
-            shouldShowBanner
-    ) {
-      window.gtag("event", "view_banner", {
-        banner_name: "banner-sidebar",
-        banner_text: text,
-        banner_description: description,
-        banner_image: image,
-      });
-    }
-  }, [shouldShowBanner]);
+  if (shouldShowBanner) return <div></div>;
 
   return (
     <div
@@ -45,21 +23,6 @@ export const BannerSidebar = ({ shouldShowBanner }) => {
         "not-prose",
       )}
     >
-      <Link
-        to={"/docs"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={clsx(
-          "flex",
-          "w-full h-auto xl:h-[152px]",
-          "flex-shrink-0",
-          "rounded-md",
-          "overflow-hidden",
-        )}
-      >
-        <img src={image} alt={"enygmah App screenshot"} loading="lazy" />
-      </Link>
-
       <h2 className={clsx("text-2xl font-semibold", "text-gray-0")}>
         {text}
       </h2>

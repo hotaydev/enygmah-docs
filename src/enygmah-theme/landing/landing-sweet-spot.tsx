@@ -26,7 +26,6 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
   const isDarkTheme = colorMode === "dark";
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeListItem = list[activeIndex];
 
   const [shouldIncrement, setShouldIncrement] = useState(true);
 
@@ -119,7 +118,6 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                 "landing-md:bg-landing-sweet-spot-glow-position-md",
                 "landing-xs:bg-landing-sweet-spot-glow-size-xs",
                 "landing-lg:bg-landing-sweet-spot-glow-size-lg",
-                activeListItem.backgroundImage,
               )}
               style={{
                 backgroundRepeat: "repeat, no-repeat",
@@ -230,7 +228,6 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                   className={clsx(
                     "w-full",
                     "h-full",
-                    "landing-sweet-spot-mask",
                     "z-[1]",
                     "landing-lg:absolute",
                     "top-0 right-0",
@@ -298,14 +295,7 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                         "transition-[transform,opacity] duration-500 ease-in-out",
                       )}
                     >
-                      <img
-                        src={
-                          isDarkTheme
-                            ? item.image2Dark
-                            : item.image2Light
-                        }
-                        alt="Code of enygmah"
-                      />
+                      <div className={clsx("p-4 dark:text-gray-200 text-gray-800")} dangerouslySetInnerHTML={{ __html: item.code }}></div>
                     </div>
                   );
                 })}
@@ -329,17 +319,12 @@ const list = [
         )}
       />
     ),
-    iconText: "Tables",
+    iconText: "Locally",
+    code: "<span class=\"text-gray-500\">$</span> enygmah",
     image1Dark:
-            "/img/general-replaceable-images/datatables-ui-dark.png",
+            "/img/options-images/systems.png",
     image1Light:
-            "/img/general-replaceable-images/datatables-ui-light.png",
-    image2Dark:
-            "/img/general-replaceable-images/datatables-code-dark.png",
-    image2Light:
-            "/img/general-replaceable-images/datatables-code.png",
-    backgroundImage:
-            "dark:bg-landing-sweet-spot-glow-red-dark bg-landing-sweet-spot-glow-red-light",
+            "/img/options-images/systems.png",
   },
   {
     icon: (props: { active: boolean }) => (
@@ -351,17 +336,12 @@ const list = [
         )}
       />
     ),
-    iconText: "List",
+    iconText: "Cloud / Pipeline",
+    code: "<span class=\"text-gray-500\">$</span> enygmah --output=<span class=\"text-gray-500\">&lt;file&gt;</span>",
     image1Dark:
-            "/img/general-replaceable-images/list-ui-dark.png",
+            "/img/options-images/pipelines-dark.png",
     image1Light:
-            "/img/general-replaceable-images/list-ui-light.png",
-    image2Dark:
-            "/img/general-replaceable-images/list-code-dark.png",
-    image2Light:
-            "/img/general-replaceable-images/list-code.png",
-    backgroundImage:
-            "dark:bg-landing-sweet-spot-glow-orange-dark bg-landing-sweet-spot-glow-orange-light",
+            "/img/options-images/pipelines.png",
   },
   {
     icon: (props: { active: boolean }) => (
@@ -373,17 +353,12 @@ const list = [
         )}
       />
     ),
-    iconText: "Charts",
+    iconText: "Customizable",
+    code: "<span class=\"text-gray-500\">$</span> enygmah --severity=<span class=\"text-gray-500\">&lt;severity&gt;</span> --analyze=<span class=\"text-gray-500\">&lt;types&gt;</span>",
     image1Dark:
-            "/img/general-replaceable-images/charts-ui-dark.png",
+            "/img/options-images/customize.png",
     image1Light:
-            "/img/general-replaceable-images/charts-ui-light.png",
-    image2Dark:
-            "/img/general-replaceable-images/charts-code-dark.png",
-    image2Light:
-            "/img/general-replaceable-images/charts-code.png",
-    backgroundImage:
-            "dark:bg-landing-sweet-spot-glow-yellow-dark bg-landing-sweet-spot-glow-yellow-light",
+            "/img/options-images/customize.png",
   },
   {
     icon: (props: { active: boolean }) => (
@@ -395,17 +370,12 @@ const list = [
         )}
       />
     ),
-    iconText: "Forms",
+    iconText: "Pre-commit",
+    code: "<span class=\"text-gray-500\">$</span> enygmah --new-code",
     image1Dark:
-            "/img/general-replaceable-images/forms-ui-dark.png",
+            "/img/options-images/commit-dark.png",
     image1Light:
-            "/img/general-replaceable-images/forms-ui-light.png",
-    image2Dark:
-            "/img/general-replaceable-images/forms-code-dark.png",
-    image2Light:
-            "/img/general-replaceable-images/forms-code.png",
-    backgroundImage:
-            "dark:bg-landing-sweet-spot-glow-cyan-dark bg-landing-sweet-spot-glow-cyan-light",
+            "/img/options-images/commit-light.png",
   },
   {
     icon: (props: { active: boolean }) => (
@@ -417,17 +387,12 @@ const list = [
         )}
       />
     ),
-    iconText: "Wizards",
+    iconText: "Quality",
+    code: "<span class=\"text-gray-500\">$</span> enygmah --analyze=<span class=\"text-gray-500\">quality</span>",
     image1Dark:
-            "/img/general-replaceable-images/wizards-ui-dark.png",
+            "/img/options-images/quality.png",
     image1Light:
-            "/img/general-replaceable-images/wizards-ui-light.png",
-    image2Dark:
-            "/img/general-replaceable-images/wizards-code-dark.png",
-    image2Light:
-            "/img/general-replaceable-images/wizards-code.png",
-    backgroundImage:
-            "dark:bg-landing-sweet-spot-glow-blue-dark bg-landing-sweet-spot-glow-blue-light",
+            "/img/options-images/quality.png",
   },
   {
     icon: (props: { active: boolean }) => (
@@ -439,16 +404,11 @@ const list = [
         )}
       />
     ),
-    iconText: "Authentication",
+    iconText: "Security",
+    code: "<span class=\"text-gray-500\">$</span> enygmah --analyze=<span class=\"text-gray-500\">security</span>",
     image1Dark:
-            "/img/general-replaceable-images/authentication-ui.png",
+            "/img/options-images/security.png",
     image1Light:
-            "/img/general-replaceable-images/authentication-ui-light.png",
-    image2Dark:
-            "/img/general-replaceable-images/authentication-code-dark.png",
-    image2Light:
-            "/img/general-replaceable-images/authentication-code.png",
-    backgroundImage:
-            "dark:bg-landing-sweet-spot-glow-indigo-dark bg-landing-sweet-spot-glow-indigo-light",
+            "/img/options-images/security.png",
   },
 ];

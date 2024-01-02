@@ -133,11 +133,6 @@ module.exports = {
                     "linear-gradient(180deg, rgba(110, 179, 247, 0) 50%, rgba(0, 128, 255, 0.25) 100%)",
         "selected-tab-dark":
                     "linear-gradient(180deg, rgba(110, 179, 247, 0) 50%, rgba(0, 128, 255, 0.25) 100%)",
-        "landing-stars": [
-          "linear-gradient(180deg, rgba(10,10,41,0.6) 0%, rgba(10, 10, 41, 0.4) 100%)",
-          "url(/img/general-replaceable-images/landing-stars.webp)",
-          "url(/img/general-replaceable-images/landing-noise.webp)",
-        ],
         "landing-component-divider-dark":
                     "linear-gradient(90deg, rgba(48, 52, 80, 0) 0%, #303450 12.5%, #303450 87.5%, rgba(48, 52, 80, 0) 100%)",
         "landing-component-divider":
@@ -159,8 +154,6 @@ module.exports = {
                     "conic-gradient(from 180deg at 50% 50%, #3FDCF7 0deg, #1890FF 51.43deg, #6813CB 102.86deg, #FF003D 154.29deg, #FF8A00 205.71deg, #FFD600 257.14deg, #67BE23 308.57deg, #3FDCF7 360deg)",
         "landing-ghost":
                     "conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 10%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0.25) 60%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.25) 80%, rgba(255, 255, 255, 0.25) 100%)",
-        "landing-hero-video-bg":
-                    "url('/img/general-replaceable-images/hero-video-bg.webp')",
         "landing-hero-bottom-bg":
                     "url('/img/general-replaceable-images/hero-bottom-bg.svg')",
         "landing-hero-mobile-animation-bg":
