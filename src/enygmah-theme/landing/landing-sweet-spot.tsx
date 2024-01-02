@@ -147,7 +147,7 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                   "dark:text-gray-300 text-gray-700",
                 )}
               >
-                Business applications not only share fundemental UI elements, but also the underlying logic.
+                Use for everything, just grab a ready code and implement, in seconds.
               </h3>
               <p
                 className={clsx(
@@ -156,7 +156,7 @@ export const LandingSweetSpot: FC<Props> = ({ className }) => {
                   "dark:text-gray-400 text-gray-600",
                 )}
               >
-                Stop writing repetitive code for CRUD, security and state management. Let enygmah automatically transform your UI elements to enterprise-grade:
+                Stop expending a lot of time to manage a full infrastructure for quality and security. enygmah does this for you.
               </p>
               <div
                 className={clsx(
