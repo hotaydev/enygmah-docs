@@ -145,7 +145,8 @@ export const MainFooter = () => {
             >
               <EnygmahLogoIcon />
             </Link>
-            <a
+            {/* TODO: discomment this after publishing on Product Hunt */}
+            {/* <a
               href="https://www.producthunt.com/posts/enygmah"
               target="_blank"
               rel="noreferrer"
@@ -157,7 +158,7 @@ export const MainFooter = () => {
                   "fill-gray-100 dark:fill-gray-700",
                 )}
               />
-            </a>
+            </a> */}
           </div>
           <div
             className={clsx(
