@@ -46,9 +46,6 @@ const siteConfig = {
             require.resolve("./src/css/demo-page.css"),
           ],
         },
-        gtag: {
-          trackingID: "G-27Z1WY952H", // TODO: add the enygmah's gtag
-        },
       },
     ],
   ],
