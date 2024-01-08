@@ -4,3 +4,4 @@ plugins/
 babel.config.js
 docusaurus.config.js
 package-lock.json
+build/

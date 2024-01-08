@@ -6,11 +6,12 @@
     "postinstall": "husky install",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "NODE_OPTIONS=\"--max-old-space-size=8192\" docusaurus build",
+    "build": "docusaurus build",
     "build:plugins": "sucrase ./plugins -d ./plugins --transforms typescript,imports && npx prettier --write ./plugins",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix .",
+    "publish": "vercel --prod"
   },
   "dependencies": {
     "@docusaurus/core": "2.4.0",
