@@ -1,4 +1,4 @@
-import { FooterDiscordIcon } from "./icons/footer-discord";
+// import { FooterDiscordIcon } from "./icons/footer-discord";
 import { FooterGithubIcon } from "./icons/footer-github";
 import { FooterLinkedinIcon } from "./icons/footer-linkedin";
 // import { FooterRedditIcon } from "./icons/footer-reddit";
@@ -70,10 +70,10 @@ export const socialLinks = [
     icon: FooterGithubIcon,
     href: "https://github.com/hotaydev/enygmah",
   },
-  {
-    icon: FooterDiscordIcon,
-    href: "https://discord.gg/KvVc32G6",
-  },
+  // {
+  //   icon: FooterDiscordIcon,
+  //   href: "https://discord.gg/KvVc32G6",
+  // },
   // {
   //   icon: FooterRedditIcon,
   //   href: "https://www.reddit.com/r/hotaydev/",
