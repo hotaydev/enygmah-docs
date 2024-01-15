@@ -1,7 +1,6 @@
 {
   "name": "documentation",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "postinstall": "husky install",
     "docusaurus": "docusaurus",
@@ -13,6 +12,7 @@
     "lint": "eslint --fix .",
     "publish": "vercel --prod"
   },
+  "license": "MIT",
   "dependencies": {
     "@docusaurus/core": "2.4.0",
     "@docusaurus/plugin-client-redirects": "2.4.0",
