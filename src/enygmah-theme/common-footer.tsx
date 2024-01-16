@@ -4,7 +4,6 @@ import { menuItems, secondaryMenuItems, socialLinks } from "./footer-data";
 import { HeartOutlinedIcon } from "./icons/heart-outlined";
 import Link from "@docusaurus/Link";
 import { EnygmahLogoIcon } from "./icons/enygmah-logo";
-import { PHBadgeIcon } from "./icons/ph-badge";
 import { LeafIcon } from "./icons/leaf";
 
 export const MainFooter = () => {
@@ -145,20 +144,19 @@ export const MainFooter = () => {
             >
               <EnygmahLogoIcon />
             </Link>
-            {/* TODO: discomment this after publishing on Product Hunt */}
-            {/* <a
-              href="https://www.producthunt.com/posts/enygmah"
+            <a
+              href="https://www.producthunt.com/posts/enygmah?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-enygmah" 
               target="_blank"
               rel="noreferrer"
-              className={clsx("hover:no-underline")}
             >
-              <PHBadgeIcon
-                className={clsx(
-                  "text-gray-900 dark:text-gray-0",
-                  "fill-gray-100 dark:fill-gray-700",
-                )}
+              <img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=434675&theme=light"
+                alt="enygmah - Security and Quality for your code. Open-source and free. | Product Hunt"
+                style={{width: "250px", height: "54px"}}
+                width="250"
+                height="54"
               />
-            </a> */}
+            </a>
           </div>
           <div
             className={clsx(

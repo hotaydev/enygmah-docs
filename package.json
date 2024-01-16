@@ -54,6 +54,7 @@
     "eslint": "^8.54.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
+    "prettier": "^3.2.2",
     "sucrase": "^3.27.0",
     "typescript": "^5.0.0"
   }
