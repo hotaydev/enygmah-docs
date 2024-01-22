@@ -110,7 +110,7 @@ const siteConfig = {
         },
       ],
     },
-    image: "img/hero-image.png",
+    image: "img/hero-image.jpeg",
     algolia: {
       // TODO: Use https://docsearch.algolia.com/ when it's ready for production
       appId: "KRR9VEUPCT",
