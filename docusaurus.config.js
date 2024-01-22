@@ -17,8 +17,7 @@ const siteConfig = {
         docs: {
           path: "./docs",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-                              "https://github.com/hotaydev/enygmah-docs/tree/master/documentation",
+          editUrl: "https://github.com/hotaydev/enygmah-docs/tree/master/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           admonitions: {
