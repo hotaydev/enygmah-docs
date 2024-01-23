@@ -111,10 +111,10 @@ const siteConfig = {
     },
     image: "img/hero-image.jpeg",
     algolia: {
-      // TODO: Use https://docsearch.algolia.com/ when it's ready for production
-      appId: "KRR9VEUPCT",
-      apiKey: "cd0188125dcd31fb4b011b5e536d963a",
-      indexName: "refine",
+      // https://dashboard.algolia.com/apps/4O4BNN9FPT/dashboard
+      appId: "4O4BNN9FPT",
+      apiKey: "8c9e5ea5fc2e57a24b21280ac575eaad",
+      indexName: "enygmah",
       contextualSearch: true,
     },
     metadata: [
